@@ -15,7 +15,7 @@ ket :  2 -> jumlah baris yang tidak ditampilkan dihitung dari baris pertama, 5 -
 
 Alternatif di sql server adalah dengan memanfaatkan id auto_increment atau bisa juga memanfaatkan method ROW_NUMBER()
 
-### fungsi dari ROW_NUMBER adalah menampilkan nomor urut row contoh
+### fungsi dari ROW_NUMBER adalah menampilkan nomor urut row, contoh
 ```
 select *, ROW_NUMBER() over(order by first_name asc) as row_number from customer
 ```
