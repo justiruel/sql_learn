@@ -1,9 +1,3 @@
-# sql_learn
-
-```
-~ALL TABLE IS UNDER DATABASE latihan~
-```
-
 ## LIMIT AND OFFSET
 Di sql server tidak mengenal fungsi limit offset seperti di mysql
 contoh mysql :
