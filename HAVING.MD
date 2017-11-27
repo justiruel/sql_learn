@@ -8,7 +8,7 @@ dengan kata lain 'HAVING' digunakan sebagai pengganti 'WHERE' di fungsi agregat 
 contoh : 
 <table>
   <th>
-    <td>id</td><td>first_name</td><td>last_name</td>  <td>age</td><td>level</td>  
+    <td>id</td><td>first_name</td><td>last_name</td><td>age</td><td>level</td>  
   </th>
 </table>  
 id	first_name	last_name	age	level
