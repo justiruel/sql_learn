@@ -48,8 +48,7 @@ select COUNT(age) as jumlah, level from customer group by level having SUM(age) 
 ```
 
 Penjelasan : 
-1. select jumlah age secara keseluruhan grup berdasarkan level :
-hasil :
+1. select jumlah age secara keseluruhan grup berdasarkan level, hasil :
 
 <table>
   <tr>
