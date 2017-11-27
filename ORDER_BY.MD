@@ -42,4 +42,4 @@ Contoh :
 select * from customer order by first_name,last_name asc
 ```
 Ket : Data akan di urut berdasarkan first_name secara ascending, jika ada beberapa record yang isi first_name-nya sama, maka diurut berdasarkan last_name
-pada contoh di atas ada 2 record yang memiliki value 'idrus' maka record yang didahulukan adalah 'idrus arham' lalu 'idrus ramli'.
+pada contoh di atas ada 2 record yang memiliki value first_name 'idrus' maka record yang didahulukan adalah 'idrus arham' lalu 'idrus ramli'.
