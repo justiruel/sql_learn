@@ -75,3 +75,15 @@ Penjelasan :
     <td>4</td><td>2</td>
   </tr>
 </table>
+
+
+### catatan tambahan
+Di mysql HAVING bisa digunakan sebagai pengganti WHERE jika acuannya adalah nama alias
+
+```
+SELECT a,b,c FROM tablex WHERE c = 1;
+```
+
+```
+SELECT a,b,c AS nama_alias FROM tablex HAVING nama_alias = 1;
+```
