@@ -7,21 +7,41 @@ dengan kata lain 'HAVING' digunakan sebagai pengganti 'WHERE' di fungsi agregat 
 
 contoh : 
 <table>
-  <th>
-    <td>id</td><td>first_name</td><td>last_name</td><td>age</td><td>level</td>  
-  </th>
+  <tr>
+    <th>id</th><th>first_name</th><th>last_name</th><th>age</th><th>level</th>
+  </tr>
+  <tr>
+    <td>1</td><td>john</td><td>cena</td><td>12</td><td>1</td>
+  </tr>
+  <tr>
+    <td>2</td><td>idrus</td><td>ramli</td><td>34</td><td>1</td>
+  </tr>
+  <tr>
+    <td>3</td><td>firanda</td><td>adireja</td><td>40</td><td>1</td>
+  </tr>
+  <tr>
+    <td>4</td><td>doni</td><td>kusuma</td><td>45</td><td>1</td>
+  </tr>
+  <tr>
+    <td>5</td><td>celine</td><td>dion</td><td>49</td><td>2</td>
+  </tr>
+  <tr>
+    <td>6</td><td>marzuki</td><td>darusman</td>60<td></td><td>2</td>
+  </tr>  
+  <tr>
+    <td>7</td><td>joko</td><td>widodo</td><td>50</td><td>2</td>
+  </tr>  
+  <tr>
+    <td>8</td><td>jajang</td><td>nurjaman</td>50<td></td><td>2</td>
+  </tr>  
+  <tr>
+    <td>9</td><td>andi</td><td>NULL</td><td>40</td><td>1</td>
+  </tr>  
+  <tr>
+    <td>10</td><td>idrus</td><td>arham</td><td>30</td><td>1</td>
+  </tr> 
 </table>  
-id	first_name	last_name	age	level
-1	  john		    cena		  12	1
-2	  idrus		    ramli		  34	1
-3	  firanda		  adireja		40	1
-4	  doni		    kusuma		45	1
-5	  celine 		  dion		  49	2
-6	  marzuki		  darusman	60	2
-7	  joko		    widodo		50	2
-8	  jajang		  nurjaman	50	2
-9	  andi		    NULL		  40	1
-10	idrus		    arham		  30	1
+
 
 ```
 select COUNT(age) as jumlah, level from customer group by level having SUM(age) = 209
