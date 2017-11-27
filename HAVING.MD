@@ -26,10 +26,10 @@ contoh :
     <td>5</td><td>celine</td><td>dion</td><td>49</td><td>2</td>
   </tr>
   <tr>
-    <td>6</td><td>marzuki</td><td>darusman</td>60<td></td><td>2</td>
+    <td>6</td><td>marzuki</td><td>darusman</td><td>60</td><td>2</td>
   </tr>  
   <tr>
-    <td>7</td><td>joko</td><td>widodo</td><td>50</td><td>2</td>
+    <td>7</td><td>joko</td><td>widodo</td><td></td>50<td>2</td>
   </tr>  
   <tr>
     <td>8</td><td>jajang</td><td>nurjaman</td>50<td></td><td>2</td>
@@ -51,14 +51,26 @@ Penjelasan :
 1. select jumlah age secara keseluruhan grup berdasarkan level :
 hasil :
 
-jumlah	level
-6	    	1
-4		    2
+<table>
+  <tr>
+    <th>jumlah</th><th>level</th>
+  </tr>
+  <tr>
+    <td>6</td><td>1</td>
+    <td>4</td><td>2</td>
+  </tr>
+</table>
 
 2. hasil gruping diatas di-query lagi menggunakan perintah having (having digunakan untuk pengganti where saat kita menggunakan gruping/agregate(sum, avg, dll)) :
   -  semua nilai age pada level 1 di sum apakah = 209
   -  semua nilai age pada level 2 di sum apakah = 209
   -  yang bersesuaian di tampilkan, hasilnya :
   
-jumlah	level
-4		    2
+<table>
+  <tr>
+    <th>jumlah</th><th>level</th>
+  </tr>
+  <tr>
+    <td>4</td><td>2</td>
+  </tr>
+</table>
