@@ -85,3 +85,11 @@ Cara eksekusi :
 ```
 delete from customer where id = 18
 ```
+
+ket. 
+1. delete from customer where id = 18
+2. deleted = select * from customer where id = 18
+3. masukkan id,age,first_name dan last_name kedalam variable
+4. kondisi jika age < 70 maka munculkan pesan error dan perintah hapus tidak dijalankan
+5. jika sebaliknya maka lakukan perintah delete
+6. insert ke table log
