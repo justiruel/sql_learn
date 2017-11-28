@@ -1,5 +1,5 @@
 # STORE PROCEDURE
-
+Di SQL Server, Store procedure disimpan di DATABASE > PROGRAMMABILITY > STORED PROCEDURES
 ## STATEMENT
 
 ```
