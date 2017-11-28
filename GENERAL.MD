@@ -7,6 +7,24 @@ update tableName set field2 = 'abc' where field1 = 'xyz'
 delete from tableName where field1 = 'xyz'
 ```
 
+## SPECIAL INSERT
+
+```
+insert into tableName (field1,field2) select fieldA,fieldB from tableX
+```
+ket. nama field antara insert statement dan select statement tidak harus sama, yang penting tipe data sesuai dan jumlah field yang akan di insert dan yang di select sama
+
+## UPDATE JOIN
+
+```
+update u
+set u.assid = s.assid
+from ud u
+    inner join sale s on
+        u.id = s.udid
+```
+
+
 ## CONCAT
 
 SQL Server 2012:
