@@ -37,7 +37,7 @@ set statistics IO on
 SET STATISTICS TIME ON
 
 select * from person_cluster where nama like '%LUKIK%'
-```
+``` 
 
 
 ## Convert Date
@@ -47,3 +47,15 @@ SELECT CONVERT(varchar, GETDATE(), 101);
 ```
 
 ref : https://www.w3schools.com/sql/func_sqlserver_convert.asp
+
+
+## akses lengkap table
+
+```
+select * from [database].[dbo].[table_name]
+```
+ket. kurung balok/[]  bisa digunakan untuk nama field yang ada spasi-nya misal :
+
+```
+select * from log where [data keterangan] like '%halo%'
+```
