@@ -14,7 +14,7 @@ Begin
 End
 ```
 
-## SAMPLE CREATE SP
+## SAMPLE CREATE PROCEDURE
 
 ```
 Create  PROCEDURE GetName(
