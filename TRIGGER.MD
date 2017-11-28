@@ -19,7 +19,7 @@ INSTEAD OF INSERT/UPDATE/DELETE adalah sebagai intenceptor, yaitu misalkan terja
 dengan memanfaatkan INSTEAD OF sebelum proses delete terjadi kita bisa memasukkan sebuah logika <b>if Emp_ID == 4  then ROLLBACK else COMMIT</b>
 ```
 
-### Contoh 
+## CONTOH TRIGGER
 
 ```
 CREATE TRIGGER trgAfterInsert ON [dbo].[customer] 
