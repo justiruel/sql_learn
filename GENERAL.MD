@@ -39,3 +39,11 @@ SET STATISTICS TIME ON
 select * from person_cluster where nama like '%LUKIK%'
 ```
 
+
+## Convert Date
+
+```
+SELECT CONVERT(varchar, GETDATE(), 101);
+```
+
+ref : https://www.w3schools.com/sql/func_sqlserver_convert.asp
