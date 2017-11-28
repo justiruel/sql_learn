@@ -45,3 +45,43 @@ insert into customer values ('andi','malarangeng','50',7);
 ```
 
 ket. pada trigger, <b>inserted</b> adalah mengacu pada data yang di insert
+
+
+## CONTOH INSTEAD OF DELETE TRIGGER
+
+```
+CREATE TRIGGER trgInsteadOfDelete ON [dbo].[customer] 
+INSTEAD OF DELETE
+AS
+	declare @emp_id varchar(MAX);
+	declare @emp_age varchar(MAX);
+	declare @emp_firstname varchar(MAX);
+	declare @emp_lastname varchar(MAX);
+	
+	select @emp_id= d.id from deleted d;
+	select @emp_age=d.age from deleted d;
+	select @emp_firstname=d.first_name from deleted d;
+	select @emp_lastname=d.last_name from deleted d;
+
+	BEGIN
+		if(@emp_age<70)
+		begin
+			RAISERROR('Usia minimum yang bisa dihapus adalah 70',16,1);
+			--ROLLBACK;
+		end
+		else
+		begin
+			delete from customer where id=@emp_id;
+			--COMMIT;
+			insert into log values (@emp_firstname+' '+@emp_lastname,'Record Deleted -- Instead Of Delete Trigger.');
+			PRINT 'Record Deleted -- Instead Of Delete Trigger.'
+		end
+	END
+GO
+```
+
+Cara eksekusi :
+
+```
+delete from customer where id = 18
+```
