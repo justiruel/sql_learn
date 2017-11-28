@@ -1,4 +1,4 @@
-## COMMENTAR
+## COMMENT
 
 ```
 --INSERT INTO T VALUES ('B');
