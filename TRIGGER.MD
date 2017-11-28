@@ -11,11 +11,11 @@ isi dari tutorial :
 - INSTEAD OF DELETE Trigger
 
 ```
-After insert/update/delete adalah untuk memberi perintah apa yang harus dilakukan setelah insert/update/delete
+AFTER INSERT/UPDATE/DELETE adalah untuk memberi perintah apa yang harus dilakukan setelah insert/update/delete
 ```
 
 ```
-Instead of insert/update/delete adalah sebagai intenceptor, yaitu misalkan terjadi perintah delete (delete from Employee_Test where Emp_ID=4)
+INSTEAD OF INSERT/UPDATE/DELETE adalah sebagai intenceptor, yaitu misalkan terjadi perintah delete (delete from Employee_Test where Emp_ID=4)
 dengan memanfaatkan INSTEAD OF sebelum proses delete terjadi kita bisa memasukkan sebuah logika <b>if Emp_ID == 4  then ROLLBACK else COMMIT</b>
 ```
 
