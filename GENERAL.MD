@@ -35,4 +35,7 @@ select case when last_name  is not null then last_name  else '-'  end from custo
 ```
 set statistics IO on
 SET STATISTICS TIME ON
+
+select * from person_cluster where nama like '%LUKIK%'
 ```
+
