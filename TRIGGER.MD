@@ -11,7 +11,7 @@ isi dari tutorial :
 - INSTEAD OF DELETE Trigger
 
 ```
-After insert/update/delete adalah untuk trigger apa yang harus dilakukan setelah insert/update/delete
+After insert/update/delete adalah untuk memberi perintah apa yang harus dilakukan setelah insert/update/delete
 ```
 
 ```
