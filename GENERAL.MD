@@ -30,3 +30,9 @@ select case when last_name  is not null then last_name  else '-'  end from custo
 select case when last_name  is not null then last_name  else '-'  end from customer 
 ```
 
+## Menampilkan SQL Server Execution Times, dll
+
+```
+set statistics IO on
+SET STATISTICS TIME ON
+```
