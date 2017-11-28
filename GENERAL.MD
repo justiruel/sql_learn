@@ -1,3 +1,12 @@
+## QUERY DASAR
+
+```
+insert into tableName (field1,field2) values ('field1','field2')
+select * from tableName
+update tableName set field2 = 'abc' where field1 = 'xyz'
+delete from tableName where field1 = 'xyz'
+```
+
 ## CONCAT
 
 SQL Server 2012:
