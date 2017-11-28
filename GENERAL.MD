@@ -1,3 +1,11 @@
+## COMMENTAR
+
+```
+--INSERT INTO T VALUES ('B');
+```
+
+ket. perintah yang diketik setelah `--` adalah komentar dan tidak akan dieksekusi
+
 ## QUERY DASAR
 
 ```
