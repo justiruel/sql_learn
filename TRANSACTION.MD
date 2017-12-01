@@ -48,4 +48,4 @@ COMMIT TRAN
 --DELETE T;
 ```
 
-ket. 'B' di insert 2 kali sedangkan saat create table field di definisikan sebagai unique field sehingga jika 'B' di insert 2 kali maka akan terjadi error, dengan bantuan transaction maka tidak ada satupun data yang terinsert, dengan demikian tidak ada data yang tercecer
+ket. 'B' di insert 2 kali sedangkan saat create table field di definisikan sebagai unique field sehingga jika 'B' di insert 2 kali maka akan terjadi error, dengan bantuan transaction maka tidak ada satupun data yang terinsert (semua di rollback), dengan demikian tidak ada data yang tercecer
