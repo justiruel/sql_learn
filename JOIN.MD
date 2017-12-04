@@ -20,7 +20,7 @@ LEFT JOIN employee e ON c.first_name = e.first_name
 select * from customer c
 RIGHT JOIN employee e ON c.first_name = e.first_name        
 ```
-## Gabungan dari left dan right join, menampilkan data secara lengkap baik sisi kiri (customer) maupun sisi kanan (employee), dan data yang tidak ada akan terisi null 
+## Full Join (Gabungan dari left dan right join, menampilkan data secara lengkap baik sisi kiri (customer) maupun sisi kanan (employee), dan data yang tidak ada akan terisi null)
 
 ```
 select * from customer c
