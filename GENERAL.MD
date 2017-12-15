@@ -15,6 +15,17 @@ update tableName set field2 = 'abc' where field1 = 'xyz'
 delete from tableName where field1 = 'xyz'
 ```
 
+## Sub Query
+
+```
+SELECT a.studentid, a.name, b.total_marks
+FROM student a, marks b
+WHERE a.studentid = b.studentid AND b.total_marks >
+(SELECT total_marks
+FROM marks
+WHERE studentid =  'V002');
+```
+
 ## SPECIAL INSERT
 
 ```
