@@ -1,7 +1,6 @@
 # STORE PROCEDURE
 Di SQL Server, Store procedure disimpan di DATABASE > PROGRAMMABILITY > STORED PROCEDURES
-## STATEMENT
-
+## STATEMENT 1
 ```
 Create Procedure Procedure-name 
 (
@@ -12,6 +11,14 @@ As
 Begin
      Sql statement used in the stored procedure
 End
+```
+## STATEMENT 2
+```
+Create  PROCEDURE GetName
+AS
+BEGIN
+	print 'Halo dunia'
+END
 ```
 
 ## SAMPLE CREATE PROCEDURE
